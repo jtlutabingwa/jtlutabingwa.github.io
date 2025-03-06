@@ -13,9 +13,14 @@
         width: 200px;
     }
 
-    h1, p, a, h2 {
+    h1, h2, h3 {
     margin: 1em auto;
     text-align: center;
+    }
+
+    p, a {
+        margin: 1em auto;
+        text-align: center;
     }
 
     nav {
@@ -24,7 +29,7 @@
         gap: 15px;
     }
 
-    a {
+    a, section {
         text-decoration: none;
         font-weight: bold;
         color: darkblue;
