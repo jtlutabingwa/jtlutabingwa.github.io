@@ -14,7 +14,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+h1 {
     font-size: 2.5em;
     margin: 0;
 }
@@ -28,6 +28,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
+    display: block;
 }
 
 nav a:hover {
@@ -47,6 +48,8 @@ main {
 h2 {
     color: #D88C20;
     font-size: 2em;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 p {
@@ -60,10 +63,7 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-}
-
-footer h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0;
 }
 
@@ -71,15 +71,5 @@ footer h2 {
 @media (max-width: 768px) {
     main {
         width: 90%;
-        padding: 15px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    nav a {
-        display: block;
-        margin: 5px 0;
     }
 }
