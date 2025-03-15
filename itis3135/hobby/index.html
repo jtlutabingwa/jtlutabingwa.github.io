@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - My Hobby</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+        }
+        nav {
+            background: #0a9396;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background: #005f73;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body onload="showSection('home')">
+    <header>
+        <h1>Sports - A Passionate Hobby</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about')">About</a>
+        <a href="#" onclick="showSection('schedule')">Best Times</a>
+        <a href="#" onclick="showSection('locations')">Best Locations</a>
+        <a href="#" onclick="showSection('how')">How to Play</a>
+        <a href="#" onclick="showSection('why')">Why Play?</a>
+    </nav>
+    
+    <main>
+        <section id="home" class="active">
+            <h2>What is Sports?</h2>
+            <p>Sports are an essential part of life, promoting physical fitness, teamwork, and discipline.</p>
+        </section>
+        <section id="about">
+            <h2>Who am I?</h2>
+            <p>I am passionate about sports and love engaging in various physical activities.</p>
+        </section>
+        <section id="schedule">
+            <h2>When is the Best Time?</h2>
+            <p>Different sports have different seasons. Some are played year-round, while others are seasonal.</p>
+        </section>
+        <section id="locations">
+            <h2>Where to Play?</h2>
+            <p>Sports can be played in stadiums, gyms, parks, or even backyards.</p>
+        </section>
+        <section id="how">
+            <h2>How to Get Started?</h2>
+            <p>Start by choosing a sport, learning its rules, and practicing regularly.</p>
+        </section>
+        <section id="why">
+            <h2>Why Play Sports?</h2>
+            <p>Sports improve mental and physical health, and they are a great way to make friends.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Designed by [Your Name]</p>
+        <p>
+            <a href="https://validator.w3.org/" target="_blank">HTML Validation</a> |
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a> |
+            <a href="https://wave.webaim.org/" target="_blank">Accessibility Check</a>
+        </p>
+    </footer>
+</body>
+</html>

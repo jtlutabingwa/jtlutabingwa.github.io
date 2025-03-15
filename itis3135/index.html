@@ -6,30 +6,12 @@
     <link rel="stylesheet" href="styles/default.css">
     <title> Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || Home Page </title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTML.Include.min.js" defer></script>
 </head> 
 
 <body>
-    <header>
-        <h1> Jonathan Lutabingwa's Joyful Lion</h1>
-        <nav>
-            <a href="./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="joyful_lion/">Joyful Lions Traveling Bookstore</a>
-            ||
-            <a href="lutabingwagroupinc.com/">Lutabingwa Group Inc.</a>
-            ||
-            <a href="website_evaluations.html">Website Evaluations</a>
-            ||
-            <a href="links.html">Links</a>
-        </nav>
-        <nav> 
-            <a href="stuff/Cr@PpyPaGE.html">CRAPPY</a>
-        </nav>
-    </header>
+
+    <div data-include="components/header.html"></div>
 
     <main>
         <h2>ITIS 3135 Home</h2>
@@ -37,18 +19,13 @@
 
     </main>
 
-    <footer>
-        <nav>
-            <a href="https://www.freecodecamp.org/jonathanlutabingwa"> freeCodeCamp | </a>
-            <a href="https://www.codecademy.com/profiles/jonathanlutabingwa"> CodeAcademy | </a>
-            <a href="https://www.linkedin.com/in/jonathan-lutabingwa/"> LinkedIn | </a>
-            <a href="https://github.com/jtlutabingwa"> Jonathan Lutabingwa's Github | </a>
-            <a href="https://webpages.charlotte.edu/jlutabin/"> Charlotte Webpage | </a>
-            <a href="https://jtlutabingwa.github.io/"> Jonathan Lutabingwas Github.io | </a>
-            <a href="https://jtlutabingwa.github.io/itis3135/"> Jonathan Lutabingwas ITIS3135 Website</a>
-        </nav>
-        <br>
-        <p>Page built by Lutabingwa Firm ©2025</p>
-    </footer>
+    <div data-include="components/footer.html"></div>
+
+
+    <script>
+        document. getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css"). setAttribute ("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+
 </body>
 </html>
