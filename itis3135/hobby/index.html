@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || Hobby Page</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         body {
@@ -35,6 +35,8 @@
             padding: 20px;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
+            position: relative;
+            padding-bottom: 40px;
         }
         .active {
             display: block;
@@ -72,7 +74,11 @@
             max-width: 100%;
             height: auto;
         }
+        .divider {
+            padding-left: 30px;
+        }
     </style>
+
     <script>
         function showSection(sectionId) {
         document.querySelectorAll('section').forEach((section) => {
@@ -84,17 +90,18 @@
     }
     </script>
 </head>
+
 <body onload="showSection('home')">
     <header>
         <h1>My Hobby: Sports</h1>
     </header>
     <nav>
-        <a href="#" onclick="showSection('home')">What</a>
-        <a href="#" onclick="showSection('who')">Who</a>
-        <a href="#" onclick="showSection('when')">When</a>
-        <a href="#" onclick="showSection('where')">Where</a>
-        <a href="#" onclick="showSection('how')">How</a>
-        <a href="#" onclick="showSection('ai')">AI Prompts</a>
+        <a href="#" onclick="showSection('home')">What <img src="images/favicon-16x16.png" alt="Section Divider" class="divider"></a>
+        <a href="#" onclick="showSection('who')">Who <img src="images/favicon-16x16.png" alt="Section Divider" class="divider"></a>
+        <a href="#" onclick="showSection('when')">When <img src="images/favicon-16x16.png" alt="Section Divider" class="divider"></a>
+        <a href="#" onclick="showSection('where')">Where <img src="images/favicon-16x16.png" alt="Section Divider" class="divider"></a>
+        <a href="#" onclick="showSection('how')">How <img src="images/favicon-16x16.png" alt="Section Divider" class="divider"></a>
+        <a href="#" onclick="showSection('ai')">AI Prompts </a>
     </nav>
     
     <main>
@@ -121,6 +128,7 @@
             </table>
         </section>
 
+        
 
         <section id="who">
             <h2>Who am I?</h2>
@@ -151,7 +159,7 @@
             </form>
         </section>
 
-
+    
         <section id="when">
             <h2>When is the Best Time?</h2>
             <p>
@@ -287,8 +295,8 @@
             </p>
 
             <form>
-                <label for="whySports">Why do you play sports?</label>
-                <input type="text" id="whySports" name="whySports">
+                <label for="why-sports">Why do you play sports?</label>
+                <input type="text" id="why-sports" name="why-sports">
                 <button type="submit">Submit</button>
             </form>
 
@@ -308,11 +316,11 @@
         <section id="ai">
             <h2>AI Prompts</h2>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Guide me through accessing a file outside a folder that I'm currently in</li>
+                <li>Guide me through making a javascript script that hides an element</li>
+                <li>Give me three colors that are appealing to the eye and are similar shades</li>
+                <li>What are some reasons why an image may not show up on my website?</li>
+                <li>Give me a table that lists all the important CSS properties and what they do</li>
             </ul>
 
         </section>
