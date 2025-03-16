@@ -20,7 +20,7 @@ main {
 
 main img {
     height: 300px;
-    width: 200px;
+    max-width: 200px;
 }
 
 h1, h2, h3 {
@@ -44,6 +44,11 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: darkblue;
+}
+
+ul {
+    text-align: center; 
+    list-style-position: inside;
 }
 
 section {

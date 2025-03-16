@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports - My Hobby</title>
+    <title>Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || Hobby Page</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,8 +33,10 @@
         section {
             display: none;
             padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
-        section.active {
+        .active {
             display: block;
         }
         footer {
@@ -42,61 +45,286 @@
             padding: 10px;
             margin-top: 20px;
         }
+        table 
+        { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+        }
+        table, th, td { 
+            border: 1px solid black; 
+        }
+        th, td { 
+            padding: 10px; 
+            text-align: center; 
+        }
+        ul {
+            text-align: center; 
+            list-style-position: inside;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(11, 220, 206);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
     <script>
         function showSection(sectionId) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
+        document.querySelectorAll('section').forEach((section) => {
+        section.classList.remove('active');
+        });
+        let sectionToShow = document.getElementById(sectionId);
+        sectionToShow.classList.add('active');
+        sectionToShow.style.opacity = 1;
+    }
     </script>
 </head>
 <body onload="showSection('home')">
     <header>
-        <h1>Sports - A Passionate Hobby</h1>
+        <h1>My Hobby: Sports</h1>
     </header>
     <nav>
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('about')">About</a>
-        <a href="#" onclick="showSection('schedule')">Best Times</a>
-        <a href="#" onclick="showSection('locations')">Best Locations</a>
-        <a href="#" onclick="showSection('how')">How to Play</a>
-        <a href="#" onclick="showSection('why')">Why Play?</a>
+        <a href="#" onclick="showSection('home')">What</a>
+        <a href="#" onclick="showSection('who')">Who</a>
+        <a href="#" onclick="showSection('when')">When</a>
+        <a href="#" onclick="showSection('where')">Where</a>
+        <a href="#" onclick="showSection('how')">How</a>
+        <a href="#" onclick="showSection('ai')">AI Prompts</a>
     </nav>
     
     <main>
         <section id="home" class="active">
             <h2>What is Sports?</h2>
-            <p>Sports are an essential part of life, promoting physical fitness, teamwork, and discipline.</p>
+            <p>
+                Sports are a great way to stay active and maintain physical fitness. They offer mental and emotional benefits 
+                that many other hobbies cannot provide. Sports bring people together, whether through teamwork or competition. 
+                At the end of the day, both the winning and losing teams share a mutual respect for each other.
+            </p>
+
+            <figure>
+                <img src="/itis3135/hobby/images/basket.jpg" alt="Different professionals playing sports">
+                <figcaption>
+                    There are a variety of sports that entertain and bring joy to people worldwide. 
+                    The sports community has become an integral part of many people's lives and continues to grow.
+                </figcaption>
+            </figure>
+            
+            <table>
+                <tr><th>Topic</th><th>Details</th></tr>
+                <tr><td>Benefits</td><td>Improves health, builds teamwork</td></tr>
+                <tr><td>Popular Sports</td><td>Soccer, Basketball, Football</td></tr>
+            </table>
         </section>
-        <section id="about">
+
+
+        <section id="who">
             <h2>Who am I?</h2>
-            <p>I am passionate about sports and love engaging in various physical activities.</p>
+            <p>
+                I am passionate about sports and love engaging in various physical activities. 
+                My love for sports started in childhood and has continued into adulthood. 
+                I've always enjoyed the thrill of competition, the joy of teamwork, and the physical challenge. 
+                Sports have been a constant part of my life, and I can't emember a time without them.
+            </p>
+            <br>
+
+            <figure>
+                <img src="/itis3135/hobby/images/footballpic.jpg" alt="Football pic from highschool">
+                <figcaption>
+                    This is a picture of me from 2021 during my second year playing football. 
+                    I started in 2020 during quarantine and played as a starter for two years. 
+                    Football taught me valuable lessons about teamwork, leadership, and resilience. 
+                    I don't know where I would be without it.
+
+
+                </figcaption>
+            </figure>
+
+            <form>
+                <label for="sport">What is the sport displayed in the picture?</label>
+                <input type="text" id="sport" name="sport">
+                <button type="submit">Submit</button>
+            </form>
         </section>
-        <section id="schedule">
+
+
+        <section id="when">
             <h2>When is the Best Time?</h2>
-            <p>Different sports have different seasons. Some are played year-round, while others are seasonal.</p>
+            <p>
+                Different sports are played in different seasons. Some, like soccer, 
+                are played year-round in various leagues and tournaments, 
+                while others, like snowboarding, are seasonal and best enjoyed during the winter months.
+
+            </p>
+
+            <form>
+                <label for="season">What season do you like to play sports?</label>
+                <select id="season" name="season">
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+
+            <figure>
+                <img src="/itis3135/hobby/images/footballsix.webp" alt="football">
+                <figcaption>
+                    Fall is the typical season for football. 
+                    The game requires coordination and teamwork between players and coaches. 
+                    Coaches strategize by making play calls based on the opposing team's defense or offense. 
+                    Football is a highly physical sport that can also be quite dangerous.
+ 
+                </figcaption>
+            </figure>
+
+            <table>
+                <tr><th>Season</th><th>Sports</th></tr>
+                <tr><td>Spring</td><td>Baseball, Soccer</td></tr>
+                <tr><td>Summer</td><td>Swimming, Beach Volleyball</td></tr>
+                <tr><td>Fall</td><td>Football, Cross Country</td></tr>
+                <tr><td>Winter</td><td>Hockey, Skiing</td></tr>
+            </table>
         </section>
-        <section id="locations">
+
+
+        <section id="where">
             <h2>Where to Play?</h2>
-            <p>Sports can be played in stadiums, gyms, parks, or even backyards.</p>
+            <p>
+                Sports can be played in stadiums, gyms, parks, or even backyards. 
+                In reality, you can play sports almost anywhere. 
+                All you need is the right equipment and a passion for the sport you're playing!
+            </p>
+
+            <form>
+                <label for="sport-location">Where do you like to play sports?</label><br>
+                <select id="sport-location" name="sport-location">
+                    <option value="gym">Gym</option>
+                    <option value="fields">Fields</option>
+                    <option value="outdoor-courts">Outdoor Courts</option>
+                    <option value="ski-mountains">Ski Mountains</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <figure>
+                <img src="/itis3135/hobby/images/snowboardingmtns.webp" alt="two people skiing and snowboarding">
+                <figcaption>
+                    Snowboarding is a winter sport that involves strapping into a snowboard with specialized boots. 
+                    A key tip for beginners is to remember "heels up" and "toes down," 
+                    which helps with stopping and controlling speed.
+                </figcaption>
+            </figure>
+
+            <table>
+                <tr><th>Location</th><th>Type of Sports</th></tr>
+                <tr><td>Gym</td><td>Basketball, Volleyball</td></tr>
+                <tr><td>Fields</td><td>Soccer, Football</td></tr>
+                <tr><td>Outdoor Courts</td><td>Tennis, Street Basketball</td></tr>
+                <tr><td>Ski Mountains</td><td>Skiing, Snowboarding</td></tr>
+            </table>
         </section>
+
+
         <section id="how">
             <h2>How to Get Started?</h2>
-            <p>Start by choosing a sport, learning its rules, and practicing regularly.</p>
+            <p>
+                Start by choosing a sport, learning its rules, and practicing regularly. 
+                Some sports are easier to learn than others. 
+                A great way to begin is with running, as it builds stamina—an essential skill for almost every sport. 
+                However, if running isn't your thing, 
+                diving straight into a sport you love is perfectly fine. 
+                The most important thing is to have fun!
+
+            </p>
+
+            <form>
+                <label for="sport-activities">What sport are you intreseted in most?</label><br>
+                <select id="sport-activities" name="sport-activities">
+                    <option value="football">Football</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="running">Running</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="tennis">Tennis</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            <figure>
+                <img src="/itis3135/hobby/images/runningman.jpg" alt="man running">
+                <figcaption>
+                    Running is a great way to build endurance and get started with sports. 
+                    Different running techniques can improve efficiency and overall performance.
+                    Running will translate to every sport you play.
+
+                </figcaption>
+            </figure>
+            
+            <table>
+                <tr><th>Sport</th><th>Main Equipment</th></tr>
+                <tr><td>Basketball</td><td>Ball, Hoop</td></tr>
+                <tr><td>Soccer</td><td>Ball, Goalpost</td></tr>
+                <tr><td>Tennis</td><td>Racket, Ball</td></tr>
+                <tr><td>Hockey</td><td>Stick, Puck</td></tr>
+            </table>
         </section>
+
+
         <section id="why">
             <h2>Why Play Sports?</h2>
-            <p>Sports improve mental and physical health, and they are a great way to make friends.</p>
+            <p>
+                Sports improve both mental and physical health and provide a great way to make friends. 
+                They support personal growth during key stages of life and make staying in shape enjoyable. 
+                Many people find sports to be an effective way to relieve stress and express emotions in a healthy manner.
+            </p>
+
+            <form>
+                <label for="whySports">Why do you play sports?</label>
+                <input type="text" id="whySports" name="whySports">
+                <button type="submit">Submit</button>
+            </form>
+
+            <figure>
+                <img src="/itis3135/hobby/images/sportsbenefits.jpg" alt="benefits of sports">
+                <figcaption>
+                    <ul>
+                        <li>Playing sports enhances physical health by improving cardiovascular fitness, strength, and coordination.</li>
+                        <li>It also develops teamwork, discipline, and leadership skills, which are valuable in everyday life.</li>
+                        <li>Additionally, engaging in sports reduces stress and boosts mental well-being by promoting social interactions and a sense of achievement.</li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
         </section>
     </main>
     
     <footer>
-        <p>Designed by [Your Name]</p>
+        Designed by <a href="/itis3135/lutabingwagroupinc.com/index.html"><strong>Lutabingwa Group ©2025</strong></a>
         <p>
-            <a href="https://validator.w3.org/" target="_blank">HTML Validation</a> |
-            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validation</a> |
+            <a href="https://validator.w3.org/check?uri=referer" id="validation-link-html">
+            <img src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!"></a> |
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a> |
             <a href="https://wave.webaim.org/" target="_blank">Accessibility Check</a>
         </p>
     </footer>
