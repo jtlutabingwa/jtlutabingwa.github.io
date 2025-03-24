@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || HTML Tables Assignment</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTML.Include.min.js" defer></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FFF3E0;
+        color: #5A3E20;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background: linear-gradient(to right, #D87C20, #F4A62E);
+        color: #FFD699;
+        padding: 20px;
+        text-align: center;
+    }
+    header a {
+        color: #FFD699;
+        text-decoration: none;
+    }
+
+    h1 {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    header img {
+        height: 50px;
+    }
+    nav {
+        margin-top: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: #FFE0B2;
+    }
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    h2, h3 {
+        color: #D87C20;
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #F4A62E;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    th, td {
+        border: 1px solid #5A3E20;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: #5A3E20;
+        color: #FFD699;
+    }
+    tr:nth-child(even) {
+        background-color: #F4B66E;
+    }
+    tr:nth-child(odd) {
+        background-color: #F4A62E;
+    }
+    figure {
+        margin: 20px 0;
+        text-align: center;
+    }
+    figcaption {
+        font-weight: bold;
+        color: #5A3E20;
+        margin-bottom: 10px;
+    }
+    footer {
+        text-align: center;
+        background: linear-gradient(to right, #D87C20, #F4A62E);
+        color: white;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+    }
+    footer a {
+        color: #FFD699;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Company Data</h1>
+    </header>
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Activity #2 - HTML Tables</h2>
+        
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Lebron James - theking23@joyfullion.com - 5</li>
+            <li>Lionel Messi - lmessi@joyfullion.com - 10</li>
+            <li>Randy Moss - mossrand@joyfullion.com - 15</li>
+            <li>Michael Jordan - michaeljordan@joyfullion.com - 8</li>
+            <li>Cristiano Ronaldo - cr7@joyfullion.com - 20</li>
+            <li>Jayson Tatum - wedidit@joyfullion.com - 7</li>
+            <li>Chris White - cwhite@joyfullion.com - 12</li>
+        </ol>
+        
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Lebron James</td>
+                <td>theking23@joyfullion.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Lionel Messi</td>
+                <td>lmessi@joyfullion.com</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Randy Moss</td>
+                <td>mossrand@joyfullion.com</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Michael Jordan</td>
+                <td>michaeljordan@joyfullion.com</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Cristiano Ronaldo</td>
+                <td>cr7@joyfullion.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Jayson Tatum</td>
+                <td>wedidit@joyfullion.com</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Chris White</td>
+                <td>cwhite@joyfullion.com</td>
+                <td>12</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Management</td>
+                    <td>Lebron James</td>
+                    <td>theking23@joyfullion.com</td>
+                    <td>5</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>lmessi@joyfullion.com</td>
+                    <td>10</td>
+                    <td>$6,500</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Engineering</td>
+                    <td>Randy Moss</td>
+                    <td>mossrand@joyfullion.com</td>
+                    <td>15</td>
+                    <td>$7,000</td>
+                </tr>
+                <tr>
+                    <td>Michael Jordan</td>
+                    <td>michaeljordan@joyfullion.com</td>
+                    <td>8</td>
+                    <td>$5,800</td>
+                </tr>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>cr7@joyfullion.com</td>
+                    <td>20</td>
+                    <td>$8,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Marketing</td>
+                    <td>Jayson Tatum</td>
+                    <td>wedidit@joyfullion.com</td>
+                    <td>7</td>
+                    <td>$5,200</td>
+                </tr>
+                <tr>
+                    <td>Chris White</td>
+                    <td>cwhite@joyfullion.com</td>
+                    <td>12</td>
+                    <td>$6,200</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>77</td>
+                    <td>$38,700</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+</body>
+</html>
