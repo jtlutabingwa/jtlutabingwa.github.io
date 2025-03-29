@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || BYO Intro</title>
+    <script src="scripts/survey.js" defer></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTML.Include.min.js" defer></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <h2>Build Your Own Introduction</h2>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    
+    <form id="introForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+        
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" required>
+        <br>
+        
+        <label for="image">Upload Image (PNG/JPG):</label>
+        <input type="file" id="image" accept="image/png, image/jpeg" required>
+        <br>
+        
+        <label for="caption">Image Caption:</label>
+        <input type="text" id="caption" required>
+        <br>
+        
+        <label for="personal">Personal Background:</label>
+        <input type="text" id="personal" required>
+        <br>
+        
+        <label for="professional">Professional Background:</label>
+        <input type="text" id="professional" required>
+        <br>
+        
+        <label for="academic">Academic Background:</label>
+        <input type="text" id="academic" required>
+        <br>
+        
+        <label for="webDev">Background in Web Development:</label>
+        <input type="text" id="webDev" required>
+        <br>
+        
+        <label for="platform">Primary Computer Platform:</label>
+        <input type="text" id="platform" required>
+        <br>
+        
+        <label>Courses Currently Taking:</label>
+        <div id="courses"></div>
+        <button type="button" onclick="addCourse()">Add Course</button>
+        <br>
+        
+        <label for="funny">Funny Thing?</label>
+        <input type="text" id="funny">
+        <br>
+        
+        <label for="extra">Anything Else?</label>
+        <input type="text" id="extra">
+        <br>
+        
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+        <br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    
+    <div id="result"></div>
+    
+    <div data-include="components/footer.html"></div>
+
+
+    <script>
+        document. getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css"). setAttribute ("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
