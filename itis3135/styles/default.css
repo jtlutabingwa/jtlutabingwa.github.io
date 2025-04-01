@@ -36,7 +36,7 @@ main img {
 h1, h2, h3 {
     margin: 1em auto;
     text-align: center;
-    color: #3f759e;
+    color: #3c7199;
 }
 
 p, a {
@@ -48,6 +48,9 @@ nav {
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+nav a:hover {
+    color: #033358;
 }
 
 a {

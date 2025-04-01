@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Lutabingwa's Joyful Lion || ITIS 3135 || BYO Intro</title>
+    <script src="scripts/survey.js" defer></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTML.Include.min.js" defer></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF3E0;
+    color: #5A3E20;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #D87C20, #F4A62E);
+    color: #FFD699;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: #FFD699;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFE0B2;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+    color: #D87C20;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F4A62E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #5A3E20;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #5A3E20;
+    color: #FFD699;
+}
+
+tr:nth-child(even) {
+    background-color: #F4B66E;
+}
+
+tr:nth-child(odd) {
+    background-color: #F4A62E;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #5A3E20;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #D87C20, #F4A62E);
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    color: #FFD699;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid #c3b091;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #5d4b3e;
+}
+
+input[type="text"], input[type="file"], input[type="tel"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #a48c74;
+    border-radius: 4px;
+    background-color: #f8f5f0;
+    color: #4a3f35;
+}
+
+/* Checkbox and Radio Button Styling */
+fieldset {
+    border: 2px solid #c3b091;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset legend {
+    font-weight: bold;
+    color: #5A3E20;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: #3f759e;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #2a4559;
+}
+
+/* Course Entry Styling */
+.course-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.course-entry input {
+    flex-grow: 1;
+    background-color: #f8f5f0;
+    border: 1px solid #a48c74;
+}
+
+.course-entry button {
+    background-color: #b5651d;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.course-entry button:hover {
+    background-color: #8b4513;
+}
+    </style>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <h2>Whimsical Company : Forms</h2>
+    
+    <form action="#" method="POST">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="123-456-7890">
+        
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="yourname@example.com">
+        
+        
+        <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <input type="checkbox" id="contact-email" name="contact" value="email">
+            <label for="contact-email">Email</label>
+            
+            <input type="checkbox" id="contact-phone" name="contact" value="phone">
+            <label for="contact-phone">Phone</label>
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Select a Subscription Plan:</legend>
+            <input type="radio" id="basic" name="subscription" value="basic" required>
+            <label for="basic">Basic</label>
+            
+            <input type="radio" id="premium" name="subscription" value="premium">
+            <label for="premium">Premium</label>
+        </fieldset>
+
+        
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service">
+            <option value="webdesign">Web Design</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="marketing">Digital Marketing</option>
+        </select>
+
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    
+    
+    <div data-include="components/footer.html"></div>
+
+
+    <script>
+        document. getElementById("validation_link_html"). setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css"). setAttribute ("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
