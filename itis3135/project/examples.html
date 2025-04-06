@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sustainable Fashion Gallery</title>
+  <link rel="stylesheet" href="styles/default.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 10px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #333;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Examples of Sustainable Fashion</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="submission.html">Submit Ideas</a>
+      <a href="events.html">Events</a>
+      <a href="links.html">Sustainable Brands</a>
+      <a href="info.html">Sustainability Info</a>
+      <a href="why.html">Why Sustainable?</a>
+      <a href="examples.html">Fashion Gallery</a>
+      <a href="what-you-can-do.html">Take Action</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Eco-Friendly Outfit Inspirations</h2>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="images/denim-jacket.jpg" alt="Recycled denim jacket" />
+        <div class="caption">Recycled denim jacket with organic cotton tee</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Conscious Closet | Designed by Jonathan Lutabingwa</p>
+  </footer>
+</body>
+</html>
