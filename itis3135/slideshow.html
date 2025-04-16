@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Slideshow - Jonathan Lutabingwa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/HTML.Include.min.js" defer></script>
+    <script src="scripts/slideshow.js" defer></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f0f2f5;
+          color: #333;
+          line-height: 1.6;
+        }
+      
+        .container {
+          position: relative;
+          max-width: 960px;
+          margin: 60px auto;
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+      
+        h2 {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 10px;
+          color: #444;
+        }
+      
+        .tagline {
+          font-style: italic;
+          font-size: 1rem;
+          margin-bottom: 30px;
+          color: #4b4545;
+        }
+      
+        .mySlides {
+          display: none;
+          position: relative;
+        }
+      
+        .mySlides img {
+          width: 100%;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+      
+        .numbertext {
+          position: absolute;
+          top: 8px;
+          left: 16px;
+          background: rgba(0,0,0,0.6);
+          color: #fff;
+          padding: 4px 10px;
+          border-radius: 4px;
+          font-size: 13px;
+        }
+      
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 3px;
+          background-color: rgba(0,0,0,0.4);
+          transition: background-color 0.3s ease;
+          z-index: 5;
+        }
+      
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+      
+        .prev {
+          left: 0;
+          border-radius: 0 3px 3px 0;
+        }
+      
+        .prev:hover, .next:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          color: #fff;
+          padding: 12px;
+          font-size: 16px;
+          border-radius: 0 0 8px 8px;
+          margin-top: -8px;
+        }
+      
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin: 30px 0;
+        }
+      
+        .column {
+          flex: 0 0 60px;
+        }
+      
+        .demo {
+          width: 100%;
+          border-radius: 4px;
+          opacity: 0.6;
+          cursor: pointer;
+          transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+      
+        .demo:hover {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+      
+        .active {
+          opacity: 1;
+          border-color: #007BFF;
+        }
+      
+        ul {
+            max-width: 900px;
+            margin: 30px auto;
+            padding-left: 0;
+            color: #444;
+            text-align: center;
+            list-style-position: inside;
+        }
+      
+        h3 {
+          text-align: center;
+          margin-top: 40px;
+          font-size: 1.4rem;
+          color: #333;
+        }
+
+        h1, h2{
+            margin: 1em auto;
+            text-align: center;
+            color: #333;
+        }
+      
+        p {
+          max-width: 900px;
+          margin: 20px auto;
+          padding: 0 20px;
+          color: #444;
+        }
+      
+        em {
+          color: #666;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a:hover {
+            color: #033358;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #3f759e;
+        }
+
+      </style>
+      
+</head>
+<body>
+
+    <div data-include="components/header.html"></div>
+
+  <div class="container">
+    <h2>Slideshow Assignment - Jonathan Lutabingwa</h2>
+    <p class="tagline" style="text-align:center;">A creative gallery of images representing each letter in my full name: <strong>Jonathan Lutabingwa</strong></p>
+
+    <!-- Slides -->
+    <!-- 18 slides for each letter -->
+    <div class="mySlides"><div class="numbertext">1 / 18</div><img src="images/jump-rope.jpg" alt="J - Jump Rope"></div>
+    <div class="mySlides"><div class="numbertext">2 / 18</div><img src="images/ocean.jpg" alt="O - Ocean"></div>
+    <div class="mySlides"><div class="numbertext">3 / 18</div><img src="images/nature.jpg" alt="N - Nature"></div>
+    <div class="mySlides"><div class="numbertext">4 / 18</div><img src="images/air.jpg" alt="A - Air"></div>
+    <div class="mySlides"><div class="numbertext">5 / 18</div><img src="images/tree.jpg" alt="T - Tree"></div>
+    <div class="mySlides"><div class="numbertext">6 / 18</div><img src="images/headphones.jpg" alt="H - Headphones"></div>
+    <div class="mySlides"><div class="numbertext">7 / 18</div><img src="images/art.jpg" alt="A - Art"></div>
+    <div class="mySlides"><div class="numbertext">8 / 18</div><img src="images/napkins.jpg" alt="N - Napkins"></div>
+    <div class="mySlides"><div class="numbertext">9 / 18</div><img src="images/liquid.jpg" alt="L - Liquid"></div>
+    <div class="mySlides"><div class="numbertext">10 / 18</div><img src="images/umbrella.jpg" alt="U - Umbrella"></div>
+    <div class="mySlides"><div class="numbertext">11 / 18</div><img src="images/table.jpg" alt="T - Table"></div>
+    <div class="mySlides"><div class="numbertext">12 / 18</div><img src="images/ant.jpg" alt="A - Ant"></div>
+    <div class="mySlides"><div class="numbertext">13 / 18</div><img src="images/basket.jpg" alt="B - Basket"></div>
+    <div class="mySlides"><div class="numbertext">14 / 18</div><img src="images/ink.jpg" alt="I - Ink"></div>
+    <div class="mySlides"><div class="numbertext">15 / 18</div><img src="images/nails.jpg" alt="N - Nail"></div>
+    <div class="mySlides"><div class="numbertext">16 / 18</div><img src="images/gutter.jpg" alt="G - Gutter"></div>
+    <div class="mySlides"><div class="numbertext">17 / 18</div><img src="images/wallet.jpg" alt="W - Wallet"></div>
+    <div class="mySlides"><div class="numbertext">18 / 18</div><img src="images/apple.png" alt="A - Apple"></div>
+
+    <!-- Navigation -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption -->
+    <div class="caption-container">
+      <p id="caption">J - Jump Rope</p>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="row">
+      <div class="column"><img class="demo cursor" src="images/jump-rope.jpg" onclick="currentSlide(1)" alt="J - Jump Rope"></div>
+      <div class="column"><img class="demo cursor" src="images/ocean.jpg" onclick="currentSlide(2)" alt="O - Ocean"></div>
+      <div class="column"><img class="demo cursor" src="images/nature.jpg" onclick="currentSlide(3)" alt="N - Nature"></div>
+      <div class="column"><img class="demo cursor" src="images/air.jpg" onclick="currentSlide(4)" alt="A - Air"></div>
+      <div class="column"><img class="demo cursor" src="images/tree.jpg" onclick="currentSlide(5)" alt="T - Tree"></div>
+      <div class="column"><img class="demo cursor" src="images/headphones.jpg" onclick="currentSlide(6)" alt="H - Headphones"></div>
+      <div class="column"><img class="demo cursor" src="images/art.jpg" onclick="currentSlide(7)" alt="A - Art"></div>
+      <div class="column"><img class="demo cursor" src="images/napkins.jpg" onclick="currentSlide(8)" alt="N - Napkins"></div>
+      <div class="column"><img class="demo cursor" src="images/liquid.jpg" onclick="currentSlide(9)" alt="L - Liquid"></div>
+      <div class="column"><img class="demo cursor" src="images/umbrella.jpg" onclick="currentSlide(10)" alt="U - Umbrella"></div>
+      <div class="column"><img class="demo cursor" src="images/table.jpg" onclick="currentSlide(11)" alt="T - Table"></div>
+      <div class="column"><img class="demo cursor" src="images/ant.jpg" onclick="currentSlide(12)" alt="A - Ant"></div>
+      <div class="column"><img class="demo cursor" src="images/basket.jpg" onclick="currentSlide(13)" alt="B - Basket"></div>
+      <div class="column"><img class="demo cursor" src="images/ink.jpg" onclick="currentSlide(14)" alt="I - Ink"></div>
+      <div class="column"><img class="demo cursor" src="images/nails.jpg" onclick="currentSlide(15)" alt="N - Nail"></div>
+      <div class="column"><img class="demo cursor" src="images/gutter.jpg" onclick="currentSlide(16)" alt="G - Gutter"></div>
+      <div class="column"><img class="demo cursor" src="images/wallet.jpg" onclick="currentSlide(17)" alt="W - Wallet"></div>
+      <div class="column"><img class="demo cursor" src="images/apple.png" onclick="currentSlide(18)" alt="A - Apple"></div>
+    </div>
+  </div>
+
+
+  <h3 style="text-align:center;">AI Image Prompts (Generated using ChatGPT)</h3>
+  <ul>
+    <li>"A red apple sitting on a wooden table, studio light"</li>
+  </ul>
+
+  <h3>Notes</h3>
+  <p>
+    <strong>Challenges/Frusturations:</strong>
+    Challenges I encountered were mainly related to my Acumulus validation tool, which kept flagging errors for my images.
+    Despite countless attempts to fix the issues, I couldn't figure out why the errors wouldn’t go away even after resizing the images.
+    Even when I managed to resize them, the images often appeared very blurry.
+    I also faced challenges with scripting, as my script wouldn’t function the way I intended.
+    It took many attempts and revisions to get everything working correctly.
+  </p>
+  <p>This is my own work and I did not copy and paste anyone elses code.</p>
+  <p>Signed by <em>Jonathan Lutabingwa, 04/14/25 11:32 PM</em></p>
+
+  <div data-include="components/footer.html"></div>
+</body>
+</html>

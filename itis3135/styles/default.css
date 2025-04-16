@@ -117,7 +117,6 @@ label {
 }
 
 input[type="text"], input[type="file"] {
-    width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #a48c74;
@@ -134,7 +133,6 @@ button, input[type="submit"], input[type="reset"] {
     margin-top: 10px;
     cursor: pointer;
     border-radius: 4px;
-    width: 100%;
     font-weight: bold;
 }
 

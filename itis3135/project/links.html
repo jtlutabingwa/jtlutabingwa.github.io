@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sustainable Fashion Resources</title>
   <link rel="stylesheet" href="styles/default.css" />
+  <script src="scripts/HTML.Include.min.js" defer></script>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <style>
     .links-grid {
       display: grid;
@@ -52,7 +54,7 @@
 </head>
 <body>
   <header>
-    <h1>Sustainable Fashion Brands & Resources</h1>
+    <h1>The Conscious Closet - Sustainable Fashion</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="submission.html">Submit Ideas</a>
@@ -62,11 +64,15 @@
       <a href="why.html">Why Sustainable?</a>
       <a href="examples.html">Fashion Gallery</a>
       <a href="what-can-you-do.html">Take Action</a>
+      <a href="founder.html">Founder</a>
     </nav>
   </header>
 
   <main>
     <h2>Explore These Eco-Friendly Brands</h2>
+
+    <input type="text" id="brandSearch" placeholder="Search brands..." />
+
     <section class="links-grid">
       <div class="link-card">
         <a href="https://www.patagonia.com/" target="_blank">
@@ -96,6 +102,13 @@
         </a>
       </div>
     </section>
+
+    
+    <section class="cta">
+      <h3>Know a Brand We Should Feature?</h3>
+      <p>We’d love to hear about your favorite sustainable fashion sources!</p>
+      <a class="button" href="submission.html">Submit a Brand</a>
+    </section>
   </main>
 
   <footer>
@@ -103,3 +116,13 @@
   </footer>
 </body>
 </html>
+
+<script>
+  const input = document.getElementById('brandSearch');
+  input.addEventListener('input', () => {
+    const filter = input.value.toLowerCase();
+    document.querySelectorAll('.link-card').forEach((card) => {
+      card.style.display = card.textContent.toLowerCase().includes(filter) ? '' : 'none';
+    });
+  });
+  </script>
