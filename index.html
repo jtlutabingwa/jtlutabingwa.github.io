@@ -1,77 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <meta charset="UTF-8">
-        <title>Jonathan Lutabingwa's Homepage </title>
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-        <style>
-            header {
-                color: rgb(77, 64, 50)
-            }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jonathan Lutabingwa | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+   /* Base & Fonts */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #eaeaea;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
 
-            body {
-            width: 100%;
-            height: 100vh;
-            margin: 0;
-            background-color: lightblue;
-            color: black;
-            font-family: Tahoma;
-            font-size: 16px;
-            }
-            
-            h2 {
-                color: rgb(77, 64, 50);
-                margin: 1em auto;
-                text-align: center;
-            }
+/* Header */
+header {
+  background: #1b2735;
+  color: #cce7ff;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
 
-    
-            h1, p, a {
-            margin: 1em auto;
-            text-align: center;
-            }
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+}
 
-            nav {
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-            }
+header p {
+  margin-top: 12px;
+  font-size: 1.2em;
+  color: #d9ecff;
+}
 
-            a {
-                text-decoration: none;
-                font-weight: bold;
-                color: darkblue;
-            }
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 25px 0 0;
+}
 
-            footer {
-                margin-top: 20px;
-                padding: 10px;
-                background-color: grey;
-                color: white;
-                text-align: center;
-            }
-        </style>
-    </head> 
+nav a {
+  color: #77baff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
 
-    <body>
-        <header>
-            <h1>Jonathan Lutabingwa's Webpage</h1>
-            <h2>Welcome to my Webpage!</h2>
-            <p>These are just links to lead to my profiles related to me</p>
-            <nav>
-                <a href="https://www.freecodecamp.org/jonathanlutabingwa">freeCodeCamp </a>
-                <a href="https://www.codecademy.com/profiles/jonathanlutabingwa">CodeAcademy </a>
-                <a href="https://www.linkedin.com/in/jonathan-lutabingwa/">LinkedIn </a>
-                <a href="https://github.com/jtlutabingwa">Jonathan Lutabingwa's Github </a>
-            </nav>
-        </header>
-        <main>
-            <h2>ITIS 3135 Website</h2>
-        </main>
-            <footer>
-                <nav>
-                    <a href="itis3135/">ITIS3135 Course Website</a>
-                </nav>
-            </footer>
-    </body>
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Main Container */
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #1a1f2b;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 50px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #44688f;
+  padding-bottom: 10px;
+  color: #9cd3ff;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Project Cards */
+.project {
+  background-color: #2b3244;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #4fc3f7;
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #74c7ec;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(79, 195, 247, 0.25);
+}
+
+/* Certifications */
+#certifications ul li {
+  background: #2e384d;
+  padding: 15px;
+  border-left: 4px solid #4fc3f7;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+#contact a {
+  color: #9cd3ff;
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #16202b;
+  color: #b0c4de;
+  padding: 25px;
+  margin-top: 60px;
+  font-size: 0.95em;
+}
+
+footer nav a {
+  color: #74c7ec;
+  margin-left: 12px;
+  font-weight: 500;
+}
+
+footer nav a:hover {
+  color: #ffffff;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jonathan Lutabingwa</h1>
+    <p>Cybersecurity Student | Future SOC Analyst | Tech Enthusiast</p>
+    <nav>
+      <ul>
+        <li><a href="https://www.freecodecamp.org/jonathanlutabingwa" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.codecademy.com/profiles/jonathanlutabingwa" target="_blank">Codecademy</a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-lutabingwa/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/jtlutabingwa" target="_blank">GitHub</a></li>
+        <li>
+            <a href="assets/Resume_Jonathan_Lutabingwa.pdf" target="_blank" rel="noopener">View Resume</a> |
+            <a href="assets/Resume_Jonathan_Lutabingwa.pdf" download="Jonathan_Lutabingwa_Resume.pdf" target="_blank">Download</a>
+        </li>
+        <li><a href="itis3135/">ITIS3135 Course Website</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Jonathan, a student at UNC Charlotte working toward my B.S. & M.S. in Computer Science with a concentration in Cybersecurity. I’m passionate about protecting systems, solving real-world problems, and continuously learning in a space that never stops evolving.</p>
+      <p>Right now, I'm sharpening my skills through classes, certifications, and hands-on tech support work at UNC Charlotte’s OneIT Service Desk. I'm aiming to break into the cybersecurity field as a SOC Analyst, and eventually lead efforts in blue team defense and cloud security.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+      
+        <div class="project">
+          <h3>Music Melody (Java)</h3>
+          <p>A Java-based application that manages melodies using stacks and queues. Designed for efficiency and modular design using custom data structures.</p>
+        </div>
+      
+        <div class="project">
+          <h3>Portfolio Website (This one!)</h3>
+          <p>Fully responsive HTML/CSS site to showcase my cybersecurity journey, resume, and upcoming projects.</p>
+        </div>
+      
+        <div class="project">
+          <h3>Home Lab (In Progress)</h3>
+          <p>Setting up a personal cybersecurity home lab using VirtualBox, Kali Linux, and Metasploitable. Currently building and testing virtual networks, simulating attacks, and learning practical blue team and red team techniques.</p>
+          <p><em>Stack:</em> VirtualBox, Kali Linux, Metasploitable, pfSense (planned), Splunk, Wireshark</p>
+        </div>
+      </section>
+      
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+      
+        <ul>
+          <li>
+            <strong>Certified in Cybersecurity (CC)</strong> – <em>ISC2</em><br>
+            Issued: April 2025 · Expires: April 2028<br>
+            Credential ID: 345a3978-66d8-48b7-94e7-33a84baaa4e4<br>
+            Skills: Cybersecurity, Network Security, Threat Analysis, GRC, Security Operations, Access Control
+          </li>
+      
+          <li>
+            <strong>Google Cybersecurity Specialization</strong> – <em>Coursera</em><br>
+            Issued: January 2025<br>
+            Credential ID: UGM9X2QPMP8T<br>
+            Skills: Forensics, Threat Detection, Linux, Cryptography, SQL, NIST, Splunk Cloud, Risk Assessment
+          </li>
+      
+          <li>
+            <strong>Responsive Web Design</strong> – <em>freeCodeCamp</em><br>
+            Issued: February 2025<br>
+            Credential ID: jonathanlutabingwa-rwd<br>
+            Skills: HTML, CSS
+          </li>
+      
+          <li>
+            <strong>ISC2 Candidate</strong> – <em>ISC2</em><br>
+            Issued: October 2024 · Expires: October 2025
+          </li>
+      
+          <li>
+            <strong>Microsoft Office Specialist: Excel Expert</strong> – <em>Microsoft</em><br>
+            Issued: November 2021<br>
+            Credential ID: 992057783<br>
+            Skills: Microsoft Excel (Advanced)
+          </li>
+      
+          <li>
+            <strong>Microsoft Office Specialist: Excel Associate</strong> – <em>Microsoft</em><br>
+            Issued: September 2021<br>
+            Credential ID: 992057783<br>
+            Skills: Microsoft Excel (Core)
+          </li>
+        </ul>
+      </section>
+      
+
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+      <ul>
+        <li><strong>Languages:</strong> Java, Python, C++, SQL, HTML/CSS</li>
+        <li><strong>Cyber Tools:</strong> Wireshark, Splunk, Linux (Kali/Ubuntu)</li>
+        <li><strong>Certifications:</strong> Google Cybersecurity, Security+ (in progress)</li>
+        <li><strong>Other:</strong> GitHub, Excel, Visual Studio Code</li>
+      </ul>
+    </section>
+
+    <section id="learning">
+      <h2>Currently Learning</h2>
+      <p>CompTIA Security+ (self-paced)</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:lutabingwajonathan@gmail.com">lutabingwajonathan@gmail.com</a></p>
+      <p><strong>Phone:</strong> (828) 719-1500</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Jonathan Lutabingwa — Designed by Jonathan | Hosted on GitHub Pages & Charlotte Webpages</p>
+  </footer>
+</body>
 </html>
