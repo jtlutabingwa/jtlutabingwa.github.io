@@ -85,6 +85,10 @@ body {
     font-weight: bold;
     color: #5a3e36;
   }
+
+  ul :hover {
+    color: #c86118;
+  }
   
   table {
     width: 100%;
@@ -107,7 +111,6 @@ body {
     background-color: #f5f1e9;
   }
   
-  /* Remove duplicate generic th/td styling that overrides your custom table */
   button, .button, input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -174,13 +177,15 @@ body {
     margin-bottom: 30px;
   }
   
-  .quick-links .grid {
+  .quick-links {
     display: grid;
-    row-gap: 16 px;
-    column-gap: 0px;
     margin-top: 20px;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
   }
+
+  
+
   
   .card {
     background: #f0f0f0;

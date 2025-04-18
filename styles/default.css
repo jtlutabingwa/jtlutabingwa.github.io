@@ -1,0 +1,151 @@
+   /* Base & Fonts */
+    body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #eaeaea;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+  background: #1b2735;
+  color: #cce7ff;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.8em;
+        letter-spacing: 1px;
+    }
+
+    header p {
+        margin-top: 12px;
+        font-size: 1.2em;
+        color: #d9ecff;
+    }
+
+    /* Navigation */
+        nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 25px 0 0;
+    }
+
+    nav a {
+  color: #77baff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+  color: #ffffff;
+    }
+
+    /* Main Container */
+    main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #1a1f2b;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Section Styling */
+    section {
+        margin-bottom: 50px;
+    }
+
+    section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #44688f;
+  padding-bottom: 10px;
+  color: #9cd3ff;
+    }
+
+/* Lists */
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+  margin-bottom: 10px;
+    }
+
+    /* Project Cards */
+    .project {
+    background-color: #2b3244;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4fc3f7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project h3 {
+        margin-top: 0;
+        color: #74c7ec;
+    }
+
+    .project:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 20px rgba(79, 195, 247, 0.25);
+    }
+
+
+
+    /* Certifications */
+    #certifications ul li {
+  background: #2e384d;
+  padding: 15px;
+  border-left: 4px solid #4fc3f7;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certifications:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 20px rgba(79, 195, 247, 0.25);
+    }
+
+    /* Contact */
+    #contact a {
+  color: #9cd3ff;
+  text-decoration: underline;
+    }
+
+    #contact a:hover {
+  color: #ffffff;
+    }
+
+    /* Footer */
+    footer {
+  text-align: center;
+  background: #16202b;
+  color: #b0c4de;
+  padding: 25px;
+  margin-top: 60px;
+  font-size: 0.95em;
+    }
+
+    footer nav a {
+  color: #74c7ec;
+  margin-left: 12px;
+  font-weight: 500;
+    }   
+
+    footer nav a:hover {
+  color: #ffffff;
+    }

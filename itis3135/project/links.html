@@ -47,6 +47,12 @@
       color: #1abc9c;
     }
 
+    .link-heading {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
     h1, h2 {
       text-align: center;
     }
@@ -69,11 +75,8 @@
   </header>
 
   <main>
-    <h2>Explore These Eco-Friendly Brands</h2>
-
-    <input type="text" id="brandSearch" placeholder="Search brands..." />
-
     <section class="links-grid">
+      <h2 class="link-heading">Explore These Eco-Friendly Brands</h2>
       <div class="link-card">
         <a href="https://www.patagonia.com/" target="_blank">
           <img src="images/patagonia.png" alt="Patagonia logo and gear" />
@@ -101,9 +104,18 @@
           Kotn Clothing - Focus on the finest natural fibres, which can biodegrade at the end of their lifecycle.
         </a>
       </div>
+
+      <div class="link-card">
+        <a href="https://www.thereformation.com/?srsltid=AfmBOoriRS_cIe_Gms2B6NxiBHfv3CdoGj49oTwsG8w4_b39PGQg_KVL" target="_blank">
+          <img src="images/reformation_logo.jpg" alt="Kotn Clothing" />
+          Reformation - Being naked is the #1 most sustainable option.  We're #2.
+        </a>
+      </div>
     </section>
 
-    
+    <input type="text" id="brandSearch" placeholder="Search the brands up above..." />
+    <br>
+
     <section class="cta">
       <h3>Know a Brand We Should Feature?</h3>
       <p>We’d love to hear about your favorite sustainable fashion sources!</p>
@@ -114,15 +126,17 @@
   <footer>
     <p>2025 The Conscious Closet | Designed by <a href="../lutabingwagroupinc.com/"><strong>Lutabingwa Group ©2025</strong></a></p>
   </footer>
+
+  <script>
+    const input = document.getElementById('brandSearch');
+    input.addEventListener('input', () => {
+      const filter = input.value.toLowerCase();
+      document.querySelectorAll('.link-card').forEach((card) => {
+        card.style.display = card.textContent.toLowerCase().includes(filter) ? '' : 'none';
+      });
+    });
+    </script>
+
 </body>
 </html>
 
-<script>
-  const input = document.getElementById('brandSearch');
-  input.addEventListener('input', () => {
-    const filter = input.value.toLowerCase();
-    document.querySelectorAll('.link-card').forEach((card) => {
-      card.style.display = card.textContent.toLowerCase().includes(filter) ? '' : 'none';
-    });
-  });
-  </script>

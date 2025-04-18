@@ -109,6 +109,7 @@ form {
     border: 2px solid #c3b091;
 }
 
+
 label {
     font-weight: bold;
     display: block;
@@ -158,6 +159,8 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
     padding: 5px 10px;
     color: white;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
+
 }
 
 .course-entry button:hover {
