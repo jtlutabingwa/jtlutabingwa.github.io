@@ -7,103 +7,12 @@
   <link rel="stylesheet" href="styles/default.css" />
   <script src="scripts/HTML.Include.min.js" defer></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-  <style>
-
-    .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.gallery-heading {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.gallery-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  background-color: #f9f9f9;
-  cursor: pointer;
-  animation: fadeIn 0.8s ease both;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-}
-
-.caption {
-  padding: 10px;
-  font-size: 0.9em;
-  text-align: center;
-  color: #333;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-#gallerySearch {
-  font-size: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: border 0.3s ease;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  margin: 20px auto;
-  display: block;
-  box-sizing: border-box;
-}
-
-#gallerySearch:focus {
-  border-color: #4CAF50;
-}
-
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-  </style>
+  <script src="scripts/gallery.js" defer></script>
+  <script src="scripts/load.js" defer></script>
 </head>
 
-<body>
-  <header>
-    <h1>The Conscious Closet - Sustainable Fashion</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="submission.html">Submit Ideas</a>
-      <a href="events.html">Events</a>
-      <a href="links.html">Sustainable Brands</a>
-      <a href="info.html">Sustainability Info</a>
-      <a href="why.html">Why Sustainable?</a>
-      <a href="examples.html">Fashion Gallery</a>
-      <a href="what-can-you-do.html">Take Action</a>
-      <a href="founder.html">Founder</a>
-    </nav>
-  </header>
+<body class="fade">
+  <div data-include="components/header.html"></div>
 
   <main>
 
@@ -140,21 +49,6 @@ h2 {
     </section>
   </main>
 
-  <footer>
-    <p>2025 The Conscious Closet | Designed by 
-      <a href="../lutabingwagroupinc.com/"><strong>Lutabingwa Group ©2025</strong></a>
-    </p>
-  </footer>
-
-  <script>
-    const searchInput = document.getElementById("gallerySearch");
-    searchInput.addEventListener("input", () => {
-      const filter = searchInput.value.toLowerCase();
-      document.querySelectorAll(".gallery-item").forEach((item) => {
-        const caption = item.querySelector(".caption").textContent.toLowerCase();
-        item.style.display = caption.includes(filter) ? "block" : "none";
-      });
-    });
-  </script>
+  <div data-include="components/footer.html"></div>
 </body>
 </html>

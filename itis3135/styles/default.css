@@ -11,6 +11,13 @@ html {
     height: 100%;
 }
 
+header {
+    margin: 0;
+    background-color: #d3c1a5;
+    color: #4a3f35;
+    font-family: Tahoma, sans-serif;
+}
+
 body {
     margin: 0;
     background-color: #d3c1a5;
@@ -50,6 +57,10 @@ nav {
     gap: 15px;
 }
 nav a:hover {
+    color: #033358;
+}
+
+a:hover {
     color: #033358;
 }
 

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Slideshow - Jonathan Lutabingwa</title>
+  <link rel="stylesheet" href="styles/default.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/HTML.Include.min.js" defer></script>
@@ -15,9 +16,11 @@
         }
       
         body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          background-color: #f0f2f5;
-          color: #333;
+          margin: 0;
+          background-color: #d3c1a5;
+          color: #4a3f35;
+          font-family: Tahoma, sans-serif;
+          font-size: 16px;
           line-height: 1.6;
         }
       
@@ -42,7 +45,7 @@
           font-style: italic;
           font-size: 1rem;
           margin-bottom: 30px;
-          color: #4b4545;
+          color: #5e5c5c;
         }
       
         .mySlides {
@@ -98,12 +101,15 @@
       
         .caption-container {
           text-align: center;
-          background-color: #222;
+          background-color: #292626;
           color: #fff;
           padding: 12px;
           font-size: 16px;
           border-radius: 0 0 8px 8px;
           margin-top: -8px;
+        }
+        #caption {
+          color: #ccc; 
         }
       
         .row {

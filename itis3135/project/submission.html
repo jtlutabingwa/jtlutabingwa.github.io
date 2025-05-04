@@ -7,22 +7,11 @@
   <link rel="stylesheet" href="styles/default.css" />
   <script src="scripts/HTML.Include.min.js" defer></script>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <script src="scripts/submission.js" defer></script>
+  <script src="scripts/load.js" defer></script>
 </head>
-<body>
-  <header>
-    <h1>The Conscious Closet - Sustainable Fashion</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="submission.html">Submit Ideas</a>
-      <a href="events.html">Events</a>
-      <a href="links.html">Sustainable Brands</a>
-      <a href="info.html">Sustainability Info</a>
-      <a href="why.html">Why Sustainable?</a>
-      <a href="examples.html">Fashion Gallery</a>
-      <a href="what-can-you-do.html">Take Action</a>
-      <a href="founder.html">Founder</a>
-    </nav>
-  </header>
+<body class="fade">
+  <div data-include="components/header.html"></div>
 
   <main>
     <section>
@@ -41,16 +30,15 @@
         <label for="image">Upload Image (optional):</label><br />
         <input type="file" id="image" name="image" accept="image/*" /><br /><br />
 
-        <label for="event-date">Interested Event Date:</label><br />
-        <input type="date" id="event-date" name="event-date" /><br /><br />
+        <label for="event-date">Event Date (MM/DD/YYYY):</label>
+        <input type="text" id="event-date" name="event-date" placeholder="MM/DD/YYYY" pattern="\\d{2}/\\d{2}/\\d{4}" required>
+        <small>Format: MM/DD/YYYY</small>
 
         <input type="submit" value="Submit Idea" />
       </form>
     </section>
   </main>
-
-  <footer>
-    <p>2025 The Conscious Closet | Designed by <a href="../lutabingwagroupinc.com/"><strong>Lutabingwa Group ©2025</strong></a></p>
-  </footer>
+    
+  <div data-include="components/footer.html"></div>
 </body>
 </html>
