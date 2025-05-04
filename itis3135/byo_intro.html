@@ -9,6 +9,24 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="scripts/HTML.Include.min.js" defer></script>
     <script src="scripts/byo.js" defer></script>
+    <style>
+        #result {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        #result ul {
+            list-style-type: disc;
+            padding-left: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        #result img {
+            display: block;
+            margin: 1rem auto;
+            max-width: 300px; 
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div data-include="components/header.html"></div>
@@ -19,17 +37,17 @@
         <label for="name">Name:</label>
         <input type="text" id="name" required>
         <br>
-        
-        <label for="mascot">Mascot:</label>
-        <input type="text" id="mascot" required>
-        <br>
-        
+
         <label for="image">Upload Image (PNG/JPG):</label>
         <input type="file" id="image" accept="image/png, image/jpeg" required>
         <br>
-        
+
         <label for="caption">Image Caption:</label>
         <input type="text" id="caption" required>
+        <br>
+
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" required>
         <br>
         
         <label for="personal">Personal Background:</label>
